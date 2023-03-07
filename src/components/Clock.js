@@ -18,7 +18,11 @@ function Clock() {
     setTime(new Date().toLocaleTimeString());
   }
 
-  return <div>The time now is {time}</div>;
+  return (
+    <div>
+      <p>The time now is {time}</p>
+    </div>
+  );
 }
 
 export default Clock;

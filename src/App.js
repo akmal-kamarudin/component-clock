@@ -1,18 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
 import Clock from "./components/Clock";
 
 function App() {
   const userInfo = {
-    firstName: "Akmal",
-    lastName: "Kamarudin",
+    firstName: "World",
+    lastName: "friends",
   };
 
   return (
     <>
+      <Welcome user={userInfo} />
       <Clock />
-      {/* <Welcome user={userInfo} /> */}
     </>
   );
 }

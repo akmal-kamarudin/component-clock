@@ -1,6 +1,13 @@
 function Welcome(props) {
-  console.log(props);
-  return <h1>Hello, {props.user.firstName} from Welcome Component</h1>;
+  return (
+    <div>
+      <h1>
+        Hello, {!props ? props.user.firstName : props.user.lastName}. Check out
+        the time!
+        <strong>🌏</strong>
+      </h1>
+    </div>
+  );
 }
 
 export default Welcome;
